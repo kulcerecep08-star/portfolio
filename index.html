@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recep Faruk Külçe, motion designer</title>
+  <meta name="description" content="Motion design and animation for advertising by Recep Faruk Külçe.">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="top">
+    <a class="name" href="#top">Recep Faruk Külçe</a>
+    <nav class="social" aria-label="Contact">
+      <a href="https://www.linkedin.com/in/recep-faruk-k%C3%BCl%C3%A7e-7a6a0114b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg>
+      </a>
+      <a href="mailto:recepfarukkulce@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Showreel">
+      <div class="hero-media" id="heroMedia"></div>
+      <div class="hero-foot">
+        <p class="role">Motion designer for advertising</p>
+        <div class="controls">
+          <button class="ctl" id="heroPlay" type="button" aria-label="Pause showreel">
+            <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="7" y="5" width="3.2" height="14"/><rect x="13.8" y="5" width="3.2" height="14"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="ctl" id="heroSound" type="button" aria-label="Turn sound on" aria-pressed="false">
+            <svg class="i-muted" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="m16 9.5 5 5m0-5-5 5"/></svg>
+            <svg class="i-sound" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a7.8 7.8 0 0 1 0 11"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="playhead" aria-hidden="true"><span id="playhead"></span></div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="workTitle">
+      <div class="work-head">
+        <h2 id="workTitle">Selected work</h2>
+        <p class="work-note"><span id="workCount"></span><br><span class="work-hint">Hover to preview, click to watch with sound.</span></p>
+      </div>
+      <ul class="grid" id="grid"></ul>
+      <noscript><p class="noscript">Turn on JavaScript to see the work.</p></noscript>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="aboutTitle">
+      <div class="about-inner">
+        <h2 id="aboutTitle" class="about-lede">I bring ideas to life through motion graphics and animation for advertising.</h2>
+        <p class="about-body">I'm a motion designer with a passion for creating captivating visual experiences. Working across the advertising industry, I make work that engages audiences, carries a clear message, and stays with people after it ends.</p>
+
+        <div class="about-cols">
+          <div>
+            <h3>Brands I've worked on</h3>
+            <p class="brands" id="brands"></p>
+          </div>
+          <div>
+            <h3>Start a project</h3>
+            <p class="contact">
+              <a href="mailto:recepfarukkulce@gmail.com">recepfarukkulce@gmail.com</a><br>
+              <a href="https://www.linkedin.com/in/recep-faruk-k%C3%BCl%C3%A7e-7a6a0114b/" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year"></span> Recep Faruk Külçe</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <dialog class="viewer" id="viewer" aria-labelledby="viewerTitle">
+    <div class="viewer-bar">
+      <p class="viewer-title" id="viewerTitle"></p>
+      <div class="viewer-nav">
+        <button class="ctl" id="prev" type="button" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m14.5 5-7 7 7 7"/></svg>
+        </button>
+        <button class="ctl" id="next" type="button" aria-label="Next project">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9.5 5 7 7-7 7"/></svg>
+        </button>
+        <button class="ctl" id="close" type="button" aria-label="Close player">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="viewer-stage" id="viewerStage"></div>
+  </dialog>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
